@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kshetra Interiors - Premium Interior and Exterior Design Services. Designing Spaces That Inspire.">
+    <title>Kshetra Interiors | Designing Spaces That Inspire</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts - Elegant Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // Initialize EmailJS with your public key
+            emailjs.init("vmB9xuAPeLqVmE8t_");
+        })();
+    </script>
+</head>
+<body>
+    <!-- ========================================
+         NAVIGATION BAR
+         ======================================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <img src="images/kshetra LOGO.png" alt="Kshetra Interiors - Reflect Your Style" class="logo-img">
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="interior.html" class="nav-link">Interior</a></li>
+                <li><a href="exterior.html" class="nav-link">Exterior</a></li>
+                <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <!-- Mobile Menu Toggle -->
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========================================
+         HERO SECTION - Full Screen Carousel
+         ======================================== -->
+    <section class="hero" id="home">
+        <!-- Carousel Container -->
+        <div class="carousel">
+            <!-- Slide 1 - Modern Living Room -->
+            <div class="carousel-slide active">
+                <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=1920&q=80" alt="Modern Living Room Interior">
+            </div>
+            <!-- Slide 2 - Luxury Bedroom -->
+            <div class="carousel-slide">
+                <img src="https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=1920&q=80" alt="Luxury Bedroom Interior">
+            </div>
+            <!-- Slide 3 - Contemporary Kitchen -->
+            <div class="carousel-slide">
+                <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1920&q=80" alt="Contemporary Kitchen Design">
+            </div>
+            <!-- Slide 4 - Elegant Office Space -->
+            <div class="carousel-slide">
+                <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&q=80" alt="Elegant Office Interior">
+            </div>
+            <!-- Slide 5 - Beautiful Exterior -->
+            <div class="carousel-slide">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80" alt="Beautiful Home Exterior">
+            </div>
+        </div>
+
+        <!-- Dark Overlay for Better Text Visibility -->
+        <div class="hero-overlay"></div>
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <h1 class="hero-title">Kshetra Interiors</h1>
+            <p class="hero-subtitle">Designing Spaces That Inspire</p>
+            <a href="#services" class="hero-btn">Explore Services</a>
+        </div>
+
+        <!-- Carousel Navigation Dots -->
+        <div class="carousel-dots">
+            <span class="dot active" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+            <span class="dot" data-slide="2"></span>
+            <span class="dot" data-slide="3"></span>
+            <span class="dot" data-slide="4"></span>
+        </div>
+    </section>
+
+    <!-- ========================================
+         OUR SERVICES SECTION
+         ======================================== -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What We Offer</span>
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-description">Transform your spaces with our expert interior and exterior design solutions</p>
+            </div>
+
+            <!-- Main Service Cards -->
+            <div class="service-cards">
+                <!-- Interior Design Card -->
+                <a href="interior.html" class="service-card" id="interior-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80" alt="Interior Design Services">
+                        <div class="card-overlay">
+                            <span class="card-icon">🏠</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Interior Design</h3>
+                        <p>Create stunning indoor spaces that reflect your personality and lifestyle</p>
+                        <span class="card-link">Explore Interior Services →</span>
+                    </div>
+                </a>
+
+                <!-- Exterior Design Card -->
+                <a href="exterior.html" class="service-card" id="exterior-card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80" alt="Exterior Design Services">
+                        <div class="card-overlay">
+                            <span class="card-icon">🏡</span>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <h3>Exterior Design</h3>
+                        <p>Enhance your property's curb appeal with beautiful outdoor designs</p>
+                        <span class="card-link">Explore Exterior Services →</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         INTERIOR SERVICES DETAIL SECTION
+         ======================================== -->
+    <section class="interior-services" id="interior-services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Interior Excellence</span>
+                <h2 class="section-title">Interior Design Services</h2>
+                <p class="section-description">Discover our comprehensive range of interior design solutions</p>
+            </div>
+
+            <!-- Interior Services Grid -->
+            <div class="interior-grid">
+                <!-- Space Planning -->
+                <div class="interior-item">
+                    <div class="interior-image">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=600&q=80" alt="Space Planning & Interior Design">
+                    </div>
+                    <div class="interior-info">
+                        <h4>Space Planning & Design</h4>
+                        <p>Complete interior design solutions</p>
+                    </div>
+                </div>
+
+                <!-- Modular Kitchen -->
+                <div class="interior-item">
+                    <div class="interior-image">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&q=80" alt="Modular Kitchen">
+                    </div>
+                    <div class="interior-info">
+                        <h4>Modular Kitchen</h4>
+                        <p>Custom kitchen units & designs</p>
+                    </div>
+                </div>
+
+                <!-- Wardrobes -->
+                <div class="interior-item">
+                    <div class="interior-image">
+                        <img src="https://images.unsplash.com/photo-1617325247661-675ab4b64ae2?w=600&q=80" alt="Wardrobes">
+                    </div>
+                    <div class="interior-info">
+                        <h4>Wardrobes & Storage</h4>
+                        <p>Modular & custom-made solutions</p>
+                    </div>
+                </div>
+
+                <!-- False Ceiling -->
+                <div class="interior-item">
+                    <div class="interior-image">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&q=80" alt="False Ceiling Design">
+                    </div>
+                    <div class="interior-info">
+                        <h4>False Ceiling</h4>
+                        <p>Gypsum, POP & grid ceilings</p>
+                    </div>
+                </div>
+
+                <!-- Flooring -->
+                <div class="interior-item">
+                    <div class="interior-image">
+                        <img src="https://images.unsplash.com/photo-1560185893-a55cbc8c57e8?w=600&q=80" alt="Flooring Solutions">
+                    </div>
+                    <div class="interior-info">
+                        <h4>Flooring</h4>
+                        <p>Tiles, marble, wooden & vinyl</p>
+                    </div>
+                </div>
+
+                <!-- Electrical & Lighting -->
+                <div class="interior-item">
+                    <div class="interior-image">
+                        <img src="https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=600&q=80" alt="Lighting Design">
+                    </div>
+                    <div class="interior-info">
+                        <h4>Electrical & Lighting</h4>
+                        <p>Wiring, fixtures & smart lighting</p>
+                    </div>
+                </div>
+
+                <!-- Woodwork -->
+                <div class="interior-item">
+                    <div class="interior-image">
+                        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=600&q=80" alt="Woodwork & Carpentry">
+                    </div>
+                    <div class="interior-info">
+                        <h4>Woodwork & Carpentry</h4>
+                        <p>Doors, partitions & furniture</p>
+                    </div>
+                </div>
+
+                <!-- Home Automation -->
+                <div class="interior-item">
+                    <div class="interior-image">
+                        <img src="https://images.unsplash.com/photo-1558002038-1055907df827?w=600&q=80" alt="Home Automation">
+                    </div>
+                    <div class="interior-info">
+                        <h4>Home Automation</h4>
+                        <p>Smart solutions & controls</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-all-btn-container">
+                <a href="interior.html" class="view-all-btn">View All Interior Services →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         EXTERIOR EXCELLENCE SECTION
+         ======================================== -->
+    <section class="exterior-services" id="exterior-services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Exterior Excellence</span>
+                <h2 class="section-title">Exterior Design Services</h2>
+                <p class="section-description">Transform your outdoor spaces with our expert exterior solutions</p>
+            </div>
+
+            <!-- Exterior Services Grid -->
+            <div class="exterior-grid">
+                <!-- Building Elevation -->
+                <div class="exterior-item">
+                    <div class="exterior-image">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&q=80" alt="Building Elevation Design">
+                    </div>
+                    <div class="exterior-info">
+                        <h4>Building Elevation</h4>
+                        <p>Modern facade designs</p>
+                    </div>
+                </div>
+
+                <!-- Landscape Design -->
+                <div class="exterior-item">
+                    <div class="exterior-image">
+                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80" alt="Landscape Design">
+                    </div>
+                    <div class="exterior-info">
+                        <h4>Landscape Design</h4>
+                        <p>Gardens, lawns & outdoor spaces</p>
+                    </div>
+                </div>
+
+                <!-- Outdoor Lighting -->
+                <div class="exterior-item">
+                    <div class="exterior-image">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=600&q=80" alt="Outdoor Lighting">
+                    </div>
+                    <div class="exterior-info">
+                        <h4>Outdoor Lighting</h4>
+                        <p>Ambient & security lighting</p>
+                    </div>
+                </div>
+
+                <!-- Boundary Walls -->
+                <div class="exterior-item">
+                    <div class="exterior-image">
+                        <img src="https://images.unsplash.com/photo-1600573472592-401b489a3cdc?w=600&q=80" alt="Boundary Walls & Gates">
+                    </div>
+                    <div class="exterior-info">
+                        <h4>Boundary Walls & Gates</h4>
+                        <p>Secure & stylish entrances</p>
+                    </div>
+                </div>
+
+                <!-- Terrace & Rooftop -->
+                <div class="exterior-item">
+                    <div class="exterior-image">
+                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=600&q=80" alt="Terrace Design">
+                    </div>
+                    <div class="exterior-info">
+                        <h4>Terrace & Rooftop</h4>
+                        <p>Rooftop gardens & lounges</p>
+                    </div>
+                </div>
+
+                <!-- Water Features & Fountains -->
+                <div class="exterior-item">
+                    <div class="exterior-image">
+                        <img src="https://images.unsplash.com/photo-1544984243-ec57ea16fe25?w=600&q=80" alt="Water Features & Fountains">
+                    </div>
+                    <div class="exterior-info">
+                        <h4>Water Features & Fountains</h4>
+                        <p>Decorative fountains & water elements</p>
+                    </div>
+                </div>
+
+                <!-- Parking Area -->
+                <div class="exterior-item">
+                    <div class="exterior-image">
+                        <img src="https://images.unsplash.com/photo-1558036117-15d82a90b9b1?w=600&q=80" alt="Parking Area Design">
+                    </div>
+                    <div class="exterior-info">
+                        <h4>Parking & Driveways</h4>
+                        <p>Functional parking solutions</p>
+                    </div>
+                </div>
+
+                <!-- Outdoor Seating -->
+                <div class="exterior-item">
+                    <div class="exterior-image">
+                        <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea?w=600&q=80" alt="Outdoor Seating">
+                    </div>
+                    <div class="exterior-info">
+                        <h4>Outdoor Seating</h4>
+                        <p>Patios, decks & pergolas</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="view-all-btn-container">
+                <a href="exterior.html" class="view-all-btn exterior-btn">View All Exterior Services →</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         CUSTOMER REVIEWS SECTION
+         ======================================== -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Testimonials</span>
+                <h2 class="section-title">What Our Clients Say</h2>
+                <p class="section-description">Read genuine reviews from our satisfied customers</p>
+            </div>
+
+            <!-- Reviews Carousel -->
+            <div class="reviews-container">
+                <!-- Review 1 - Ravi Kumar -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">RK</div>
+                        <div class="reviewer-info">
+                            <h4>Ravi Kumar</h4>
+                            <div class="stars">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Kshetra Interiors transformed our old apartment into a modern masterpiece. Their attention to detail and creative vision exceeded all our expectations. Highly recommended!"</p>
+                    <span class="review-date">December 2024</span>
+                </div>
+
+                <!-- Review 2 - Ananya Sharma -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">AS</div>
+                        <div class="reviewer-info">
+                            <h4>Ananya Sharma</h4>
+                            <div class="stars">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"The team at Kshetra Interiors is simply amazing! They understood our vision perfectly and delivered a beautiful living room design within our budget. Professional and reliable!"</p>
+                    <span class="review-date">November 2024</span>
+                </div>
+
+                <!-- Review 3 - Suresh Reddy -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">SR</div>
+                        <div class="reviewer-info">
+                            <h4>Suresh Reddy</h4>
+                            <div class="stars">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"Our office space looks absolutely stunning after Kshetra's makeover. The false ceiling design and lighting setup created the perfect ambiance for productivity. Outstanding work!"</p>
+                    <span class="review-date">October 2024</span>
+                </div>
+
+                <!-- Review 4 - Priya Mehta -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">PM</div>
+                        <div class="reviewer-info">
+                            <h4>Priya Mehta</h4>
+                            <div class="stars">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"I was impressed by their kitchen design expertise. They maximized every inch of space while maintaining a luxurious look. The quality of materials used is top-notch!"</p>
+                    <span class="review-date">September 2024</span>
+                </div>
+
+                <!-- Review 5 - Arjun Verma -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="reviewer-avatar">AV</div>
+                        <div class="reviewer-info">
+                            <h4>Arjun Verma</h4>
+                            <div class="stars">
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                                <span class="star">★</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="review-text">"From concept to completion, Kshetra Interiors delivered excellence. Our bedroom now feels like a five-star hotel suite. Their team is courteous, punctual, and highly skilled!"</p>
+                    <span class="review-date">August 2024</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         REAL-TIME PROJECTS SECTION
+         ======================================== -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Portfolio</span>
+                <h2 class="section-title">Real-Time Projects</h2>
+                <p class="section-description">Explore our ongoing and recently completed design projects</p>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <img src="images/realprojects1.jpeg" alt="Wet & Dry Kitchen - Gachibowli">
+                        <div class="project-status completed">
+                            <span class="status-dot"></span>
+                            Completed
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-details">
+                                <span class="project-category">Kitchen</span>
+                                <h3>Wet & Dry Kitchen - Gachibowli</h3>
+                                <p>Modern wet and dry kitchen design with premium finishes and functional layout</p>
+                                <div class="project-meta">
+                                    <span><strong>Location:</strong> Gachibowli, Hyderabad</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Real-Time-projects images/furniture konapur.png" alt="Study Room Design - Kondapur">
+                        <div class="project-status completed">
+                            <span class="status-dot"></span>
+                            Completed
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-details">
+                                <span class="project-category">Residential</span>
+                                <h3>Study Room Design - Kondapur</h3>
+                                <p>Elegant study room with modern furniture and functional layout</p>
+                                <div class="project-meta">
+                                    <span><strong>Location:</strong> Kondapur, Hyderabad</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="Real-Time-projects images/jubliee hills.jpg" alt="Crockery Design - Jubilee Hills">
+                        <div class="project-status completed">
+                            <span class="status-dot"></span>
+                            Completed
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-details">
+                                <span class="project-category">Interior</span>
+                                <h3>Crockery Design - Jubilee Hills</h3>
+                                <p>Premium crockery unit with elegant storage and display</p>
+                                <div class="project-meta">
+                                    <span><strong>Location:</strong> Jubilee Hills, Hyderabad</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80" alt="Restaurant Project">
+                        <div class="project-status ongoing">
+                            <span class="status-dot"></span>
+                            Ongoing
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-details">
+                                <span class="project-category">Hospitality</span>
+                                <h3>Fine Dining Restaurant</h3>
+                                <p>Elegant ambiance with luxury finishes</p>
+                                <div class="project-meta">
+                                    <span><strong>Area:</strong> 3,200 sq.ft</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=800&q=80" alt="Modular Kitchen Project">
+                        <div class="project-status completed">
+                            <span class="status-dot"></span>
+                            Completed
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-details">
+                                <span class="project-category">Kitchen</span>
+                                <h3>Modular Kitchen - Madhapur</h3>
+                                <p>Premium modular kitchen with Italian finishes</p>
+                                <div class="project-meta">
+                                    <span><strong>Area:</strong> 180 sq.ft</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects Stats -->
+            <div class="projects-stats">
+                <div class="stat-item">
+                    <span class="stat-number">4</span>
+                    <span class="stat-label">Ongoing Projects</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">98+</span>
+                    <span class="stat-label">Completed Projects</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">70+</span>
+                    <span class="stat-label">Happy Clients</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">8+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         WHY CHOOSE US SECTION
+         ======================================== -->
+    <section class="why-us" id="why-us">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Promise</span>
+                <h2 class="section-title">Why Choose Kshetra Interiors</h2>
+                <p class="section-description">Experience the difference with our commitment to excellence</p>
+            </div>
+
+            <!-- Timeline Layout -->
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+                
+                <!-- Step 1 - Left -->
+                <div class="timeline-item left">
+                    <div class="timeline-card">
+                        <span class="timeline-number">01</span>
+                        <h3>Experienced Designers</h3>
+                        <p>Our team of seasoned professionals brings years of expertise and creative innovation to every project.</p>
+                    </div>
+                    <div class="timeline-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Step 2 - Right -->
+                <div class="timeline-item right">
+                    <div class="timeline-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <div class="timeline-card">
+                        <span class="timeline-number">02</span>
+                        <h3>Premium Quality</h3>
+                        <p>We source only the finest materials ensuring durability, aesthetics, and long-lasting beauty.</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 - Left -->
+                <div class="timeline-item left">
+                    <div class="timeline-card">
+                        <span class="timeline-number">03</span>
+                        <h3>Affordable Pricing</h3>
+                        <p>Luxury designs at competitive prices, making premium interiors accessible to everyone.</p>
+                    </div>
+                    <div class="timeline-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Step 4 - Right -->
+                <div class="timeline-item right">
+                    <div class="timeline-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                    </div>
+                    <div class="timeline-card">
+                        <span class="timeline-number">04</span>
+                        <h3>On-Time Delivery</h3>
+                        <p>We respect your time and guarantee project completion within the promised timeline.</p>
+                    </div>
+                </div>
+
+                <!-- Step 5 - Left -->
+                <div class="timeline-item left">
+                    <div class="timeline-card">
+                        <span class="timeline-number">05</span>
+                        <h3>Customer Satisfaction</h3>
+                        <p>Your happiness is our priority. We work closely with you to exceed expectations.</p>
+                    </div>
+                    <div class="timeline-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         OUR TEAM SECTION
+         ======================================== -->
+    <section class="team" id="team">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Meet The Experts</span>
+                <h2 class="section-title">Our Team</h2>
+                <p class="section-description">The creative minds behind your dream spaces</p>
+            </div>
+
+            <!-- Founder Highlight -->
+            <div class="founder-highlight">
+                <div class="team-card founder">
+                    <div class="team-image">
+                        <img src="members/member3.jpeg" alt="Prabha Kocherlakota - Founder & CEO" class="img-position-down">
+                        <div class="team-overlay">
+                            <div class="social-links">
+                                <a href="#" class="social-link">📧</a>
+                                <a href="#" class="social-link">💼</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h4>Prabha Kocherlakota</h4>
+                        <span class="team-role">Founder & CEO</span>
+                        <p>Visionary leader driving excellence in interior design with passion and innovation.</p>
+                    </div>
+                    <div class="founder-badge">★ Founder</div>
+                </div>
+            </div>
+
+            <!-- Team Grid -->
+            <div class="team-grid">
+                <!-- Team Member 2 - Sr. Architecture - Exterior -->
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="members/member1.jpeg" alt="Palakodety Leela - Sr. Architecture - Exterior Design">
+                        <div class="team-overlay">
+                            <div class="social-links">
+                                <a href="#" class="social-link">📧</a>
+                                <a href="#" class="social-link">💼</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h4>Palakodety Leela</h4>
+                        <span class="team-role">Sr. Architecture - Exterior Design</span>
+                    </div>
+                </div>
+
+                <!-- Team Member 3 - Jr. Architecture - Interior -->
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="members/member2.jpeg" alt="Shreya Unnava - Jr. Architecture - Interior Design">
+                        <div class="team-overlay">
+                            <div class="social-links">
+                                <a href="#" class="social-link">📧</a>
+                                <a href="#" class="social-link">💼</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h4>Shreya Unnava</h4>
+                        <span class="team-role">Jr. Architecture - Interior Design</span>
+                    </div>
+                </div>
+
+                <!-- Team Member 4 - CTO -->
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="members/member4.jpg" alt="Sushanth K - CTO">
+                        <div class="team-overlay">
+                            <div class="social-links">
+                                <a href="#" class="social-link">📧</a>
+                                <a href="#" class="social-link">💼</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h4>Sushanth K</h4>
+                        <span class="team-role">CTO</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         CONTACT / FEEDBACK SECTION
+         ======================================== -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="section-header left-aligned">
+                        <span class="section-tag">Get In Touch</span>
+                        <h2 class="section-title">Let's Discuss Your Project</h2>
+                        <p class="section-description">Ready to transform your space? Contact us today for a free consultation.</p>
+                    </div>
+
+                    <div class="info-items">
+                        <div class="info-item">
+                            <div class="info-icon">📍</div>
+                            <div class="info-content">
+                                <h4>Visit Us</h4>
+                                <p>123 Design Street, Bangalore<br>Karnataka, India - 560001</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">📞</div>
+                            <div class="info-content">
+                                <h4>Call Us</h4>
+                                <p>+91 98765 43210<br>+91 80 2345 6789</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">✉️</div>
+                            <div class="info-content">
+                                <h4>Email Us</h4>
+                                <p>info@kshetrainteriors.com<br>design@kshetrainteriors.com</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">🕐</div>
+                            <div class="info-content">
+                                <h4>Working Hours</h4>
+                                <p>Mon - Sat: 9:00 AM - 7:00 PM<br>Sunday: By Appointment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <h3>Send Us a Message</h3>
+                        
+                        <div class="form-group">
+                            <label for="fullName">Full Name *</label>
+                            <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                            <span class="error-message" id="phoneError"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                            </svg>
+                        </button>
+                    </form>
+
+                    <!-- Success Message -->
+                    <div class="success-message" id="successMessage">
+                        <div class="success-icon">✓</div>
+                        <h3>Thank You!</h3>
+                        <p>Your message has been sent successfully. We'll get back to you within 24 hours.</p>
+                        <button class="reset-btn" onclick="resetForm()">Send Another Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FOOTER SECTION
+         ======================================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <img src="images/KshetraLogo.png" alt="Kshetra Interiors - Reflect Your Style" class="footer-logo-img">
+                    </a>
+                    <p>Transforming spaces into extraordinary experiences since 2010. Your dream space is just a consultation away.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-services">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="#interior-services">Living Room Design</a></li>
+                        <li><a href="#interior-services">Bedroom Interior</a></li>
+                        <li><a href="#interior-services">Kitchen Design</a></li>
+                        <li><a href="#interior-services">Office Interiors</a></li>
+                        <li><a href="#interior-services">Exterior Design</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon" aria-label="Facebook">📘</a>
+                        <a href="#" class="social-icon" aria-label="Instagram">📸</a>
+                        <a href="#" class="social-icon" aria-label="Twitter">🐦</a>
+                        <a href="#" class="social-icon" aria-label="Pinterest">📌</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 Kshetra Interiors. All Rights Reserved.</p>
+                <p>Designed with ❤️ for beautiful spaces</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
