@@ -1,0 +1,311 @@
+﻿git : 15:41:23.742641 exec-cmd.c:243          trace: 
+resolved executable dir: C:/Program Files/Git/mingw64/bin
+At line:1 char:48
++ ... ="1"; $env:GIT_CURL_VERBOSE="1"; git push -u origin 
+main 2>&1 | Out-F ...
++                                      
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (15:41:23.74264 
+   1...Git/mingw64/bin:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+15:41:23.753642 git.c:472               trace: built-in: 
+git push -u origin main
+15:41:23.754640 run-command.c:667       trace: run_command: 
+GIT_DIR=.git git remote-https origin 
+https://github.com/Linuxboii/kshetra.git
+15:41:23.754640 run-command.c:928       trace: 
+start_command: git remote-https origin 
+https://github.com/Linuxboii/kshetra.git
+15:41:23.774641 exec-cmd.c:243          trace: resolved 
+executable dir: C:/Program 
+Files/Git/mingw64/libexec/git-core
+15:41:23.782637 git.c:758               trace: exec: 
+git-remote-https origin 
+https://github.com/Linuxboii/kshetra.git
+15:41:23.782637 run-command.c:667       trace: run_command: 
+git-remote-https origin 
+https://github.com/Linuxboii/kshetra.git
+15:41:23.782637 run-command.c:928       trace: 
+start_command: git-remote-https origin 
+https://github.com/Linuxboii/kshetra.git
+15:41:23.802640 exec-cmd.c:243          trace: resolved 
+executable dir: C:/Program 
+Files/Git/mingw64/libexec/git-core
+15:41:23.820640 http.c:937              == Info: Couldn't 
+find host github.com in the .netrc file; using defaults
+15:41:23.837024 http.c:937              == Info: Host 
+github.com:443 was resolved.
+15:41:23.837024 http.c:937              == Info: IPv6: 
+(none)
+15:41:23.837024 http.c:937              == Info: IPv4: 
+20.207.73.82
+15:41:23.837024 http.c:937              == Info:   Trying 
+20.207.73.82:443...
+15:41:23.887053 http.c:937              == Info: Connected 
+to github.com (20.207.73.82) port 443
+15:41:23.888057 http.c:937              == Info: ALPN: curl 
+offers h2,http/1.1
+15:41:23.889040 http.c:937              == Info: TLSv1.3 
+(OUT), TLS handshake, Client hello (1):
+15:41:24.202036 http.c:937              == Info:  CAfile: 
+C:/Program Files/Git/mingw64/etc/ssl/certs/ca-bundle.crt
+15:41:24.202036 http.c:937              == Info:  CApath: 
+none
+15:41:24.202036 http.c:937              == Info: TLSv1.3 
+(IN), TLS handshake, Server hello (2):
+15:41:24.202036 http.c:937              == Info: TLSv1.3 
+(IN), TLS handshake, Encrypted Extensions (8):
+15:41:24.203039 http.c:937              == Info: TLSv1.3 
+(IN), TLS handshake, Certificate (11):
+15:41:24.205076 http.c:937              == Info: TLSv1.3 
+(IN), TLS handshake, CERT verify (15):
+15:41:24.205076 http.c:937              == Info: TLSv1.3 
+(IN), TLS handshake, Finished (20):
+15:41:24.205076 http.c:937              == Info: TLSv1.3 
+(OUT), TLS change cipher, Change cipher spec (1):
+15:41:24.205076 http.c:937              == Info: TLSv1.3 
+(OUT), TLS handshake, Finished (20):
+15:41:24.206041 http.c:937              == Info: SSL 
+connection using TLSv1.3 / TLS_AES_128_GCM_SHA256 / x25519 
+/ id-ecPublicKey
+15:41:24.206041 http.c:937              == Info: ALPN: 
+server accepted h2
+15:41:24.206041 http.c:937              == Info: Server 
+certificate:
+15:41:24.206041 http.c:937              == Info:  subject: 
+CN=github.com
+15:41:24.206041 http.c:937              == Info:  start 
+date: Feb  5 00:00:00 2025 GMT
+15:41:24.206041 http.c:937              == Info:  expire 
+date: Feb  5 23:59:59 2026 GMT
+15:41:24.206041 http.c:937              == Info:  
+subjectAltName: host "github.com" matched cert's 
+"github.com"
+15:41:24.206041 http.c:937              == Info:  issuer: 
+C=GB; ST=Greater Manchester; L=Salford; O=Sectigo Limited; 
+CN=Sectigo ECC Domain Validation Secure Server CA
+15:41:24.206041 http.c:937              == Info:  SSL 
+certificate verify ok.
+15:41:24.206041 http.c:937              == Info:   
+Certificate level 0: Public key type EC/prime256v1 (256/128 
+Bits/secBits), signed using ecdsa-with-SHA256
+15:41:24.206041 http.c:937              == Info:   
+Certificate level 1: Public key type EC/prime256v1 (256/128 
+Bits/secBits), signed using ecdsa-with-SHA384
+15:41:24.206041 http.c:937              == Info:   
+Certificate level 2: Public key type EC/secp384r1 (384/192 
+Bits/secBits), signed using ecdsa-with-SHA384
+15:41:24.207047 http.c:937              == Info: using 
+HTTP/2
+15:41:24.207047 http.c:937              == Info: [HTTP/2] 
+[1] OPENED stream for https://github.com/Linuxboii/kshetra.g
+it/info/refs?service=git-receive-pack
+15:41:24.207047 http.c:937              == Info: [HTTP/2] 
+[1] [:method: GET]
+15:41:24.207047 http.c:937              == Info: [HTTP/2] 
+[1] [:scheme: https]
+15:41:24.207047 http.c:937              == Info: [HTTP/2] 
+[1] [:authority: github.com]
+15:41:24.207047 http.c:937              == Info: [HTTP/2] 
+[1] [:path: 
+/Linuxboii/kshetra.git/info/refs?service=git-receive-pack]
+15:41:24.208043 http.c:937              == Info: [HTTP/2] 
+[1] [user-agent: git/2.46.0.windows.1]
+15:41:24.208043 http.c:937              == Info: [HTTP/2] 
+[1] [accept: */*]
+15:41:24.208043 http.c:937              == Info: [HTTP/2] 
+[1] [accept-encoding: deflate, gzip, br, zstd]
+15:41:24.208043 http.c:937              == Info: [HTTP/2] 
+[1] [pragma: no-cache]
+15:41:24.208043 http.c:884              => Send header, 
+0000000197 bytes (0x000000c5)
+15:41:24.208043 http.c:896              => Send header: GET 
+/Linuxboii/kshetra.git/info/refs?service=git-receive-pack 
+HTTP/2
+15:41:24.208043 http.c:896              => Send header: 
+Host: github.com
+15:41:24.208043 http.c:896              => Send header: 
+User-Agent: git/2.46.0.windows.1
+15:41:24.208043 http.c:896              => Send header: 
+Accept: */*
+15:41:24.208043 http.c:896              => Send header: 
+Accept-Encoding: deflate, gzip, br, zstd
+15:41:24.208043 http.c:896              => Send header: 
+Pragma: no-cache
+15:41:24.208043 http.c:896              => Send header:
+15:41:24.208043 http.c:937              == Info: Request 
+completely sent off
+15:41:24.241242 http.c:937              == Info: TLSv1.3 
+(IN), TLS handshake, Newsession Ticket (4):
+15:41:24.242240 http.c:937              == Info: TLSv1.3 
+(IN), TLS handshake, Newsession Ticket (4):
+15:41:24.432757 http.c:884              <= Recv header, 
+0000000013 bytes (0x0000000d)
+15:41:24.432757 http.c:896              <= Recv header: 
+HTTP/2 401
+15:41:24.432757 http.c:884              <= Recv header, 
+0000000026 bytes (0x0000001a)
+15:41:24.432757 http.c:896              <= Recv header: 
+server: GitHub-Babel/3.0
+15:41:24.432757 http.c:884              <= Recv header, 
+0000000054 bytes (0x00000036)
+15:41:24.432757 http.c:896              <= Recv header: 
+content-security-policy: default-src 'none'; sandbox
+15:41:24.432757 http.c:884              <= Recv header, 
+0000000041 bytes (0x00000029)
+15:41:24.432757 http.c:896              <= Recv header: 
+content-type: text/plain; charset=UTF-8
+15:41:24.432757 http.c:884              <= Recv header, 
+0000000040 bytes (0x00000028)
+15:41:24.432757 http.c:896              <= Recv header: 
+www-authenticate: Basic realm="GitHub"
+15:41:24.432757 http.c:884              <= Recv header, 
+0000000020 bytes (0x00000014)
+15:41:24.432757 http.c:896              <= Recv header: 
+content-length: 26
+15:41:24.432757 http.c:884              <= Recv header, 
+0000000037 bytes (0x00000025)
+15:41:24.432757 http.c:896              <= Recv header: 
+date: Sun, 04 Jan 2026 10:11:25 GMT
+15:41:24.432757 http.c:884              <= Recv header, 
+0000000023 bytes (0x00000017)
+15:41:24.432757 http.c:896              <= Recv header: 
+x-frame-options: DENY
+15:41:24.432757 http.c:884              <= Recv header, 
+0000000073 bytes (0x00000049)
+15:41:24.432757 http.c:896              <= Recv header: 
+strict-transport-security: max-age=31536000; 
+includeSubDomains; preload
+15:41:24.432757 http.c:884              <= Recv header, 
+0000000059 bytes (0x0000003b)
+15:41:24.432757 http.c:896              <= Recv header: 
+x-github-request-id: 1201:23247A:173BBD8:1B32FA5:695A3CCD
+15:41:24.433766 http.c:884              <= Recv header, 
+0000000002 bytes (0x00000002)
+15:41:24.433766 http.c:896              <= Recv header:
+15:41:24.433766 http.c:937              == Info: Connection 
+#0 to host github.com left intact
+15:41:24.433766 run-command.c:667       trace: run_command: 
+'c:\Users\paran\AppData\Local\Programs\Microsoft VS 
+Code\resources\app\extensions\git\dist\askpass.sh' 
+'Username for '\''https://github.com'\'': '
+15:41:24.433766 run-command.c:928       trace: 
+start_command: 
+'c:\Users\paran\AppData\Local\Programs\Microsoft VS 
+Code\resources\app\extensions\git\dist\askpass.sh' 
+'Username for '\''https://github.com'\'': '
+15:41:24.972091 run-command.c:667       trace: run_command: 
+'c:\Users\paran\AppData\Local\Programs\Microsoft VS 
+Code\resources\app\extensions\git\dist\askpass.sh' 
+'Password for '\''https://149317336@github.com'\'': '
+15:41:24.972091 run-command.c:928       trace: 
+start_command: 
+'c:\Users\paran\AppData\Local\Programs\Microsoft VS 
+Code\resources\app\extensions\git\dist\askpass.sh' 
+'Password for '\''https://149317336@github.com'\'': '
+15:41:25.489465 http.c:937              == Info: Found 
+bundle for host: 0x136f1027b80 [can multiplex]
+15:41:25.489465 http.c:937              == Info: Re-using 
+existing connection with host github.com
+15:41:25.489465 http.c:937              == Info: Server 
+auth using Basic with user '149317336'
+15:41:25.489465 http.c:937              == Info: [HTTP/2] 
+[3] OPENED stream for https://github.com/Linuxboii/kshetra.g
+it/info/refs?service=git-receive-pack
+15:41:25.489465 http.c:937              == Info: [HTTP/2] 
+[3] [:method: GET]
+15:41:25.489465 http.c:937              == Info: [HTTP/2] 
+[3] [:scheme: https]
+15:41:25.489465 http.c:937              == Info: [HTTP/2] 
+[3] [:authority: github.com]
+15:41:25.489465 http.c:937              == Info: [HTTP/2] 
+[3] [:path: 
+/Linuxboii/kshetra.git/info/refs?service=git-receive-pack]
+15:41:25.489465 http.c:937              == Info: [HTTP/2] 
+[3] [authorization: Basic <redacted>]
+15:41:25.489465 http.c:937              == Info: [HTTP/2] 
+[3] [user-agent: git/2.46.0.windows.1]
+15:41:25.489465 http.c:937              == Info: [HTTP/2] 
+[3] [accept: */*]
+15:41:25.489465 http.c:937              == Info: [HTTP/2] 
+[3] [accept-encoding: deflate, gzip, br, zstd]
+15:41:25.489465 http.c:937              == Info: [HTTP/2] 
+[3] [pragma: no-cache]
+15:41:25.489465 http.c:884              => Send header, 
+0000000288 bytes (0x00000120)
+15:41:25.489465 http.c:896              => Send header: GET 
+/Linuxboii/kshetra.git/info/refs?service=git-receive-pack 
+HTTP/2
+15:41:25.489465 http.c:896              => Send header: 
+Host: github.com
+15:41:25.489465 http.c:896              => Send header: 
+Authorization: Basic <redacted>
+15:41:25.489465 http.c:896              => Send header: 
+User-Agent: git/2.46.0.windows.1
+15:41:25.489465 http.c:896              => Send header: 
+Accept: */*
+15:41:25.489465 http.c:896              => Send header: 
+Accept-Encoding: deflate, gzip, br, zstd
+15:41:25.489465 http.c:896              => Send header: 
+Pragma: no-cache
+15:41:25.489465 http.c:896              => Send header:
+15:41:25.489465 http.c:937              == Info: Request 
+completely sent off
+15:41:25.756343 http.c:884              <= Recv header, 
+0000000013 bytes (0x0000000d)
+15:41:25.756343 http.c:896              <= Recv header: 
+HTTP/2 200
+15:41:25.756343 http.c:884              <= Recv header, 
+0000000026 bytes (0x0000001a)
+15:41:25.756343 http.c:896              <= Recv header: 
+server: GitHub-Babel/3.0
+15:41:25.756343 http.c:884              <= Recv header, 
+0000000060 bytes (0x0000003c)
+15:41:25.756343 http.c:896              <= Recv header: 
+content-type: application/x-git-receive-pack-advertisement
+15:41:25.756343 http.c:884              <= Recv header, 
+0000000054 bytes (0x00000036)
+15:41:25.756343 http.c:896              <= Recv header: 
+content-security-policy: default-src 'none'; sandbox
+15:41:25.756343 http.c:884              <= Recv header, 
+0000000040 bytes (0x00000028)
+15:41:25.756343 http.c:896              <= Recv header: 
+expires: Fri, 01 Jan 1980 00:00:00 GMT
+15:41:25.756343 http.c:884              <= Recv header, 
+0000000018 bytes (0x00000012)
+15:41:25.756343 http.c:896              <= Recv header: 
+pragma: no-cache
+15:41:25.756343 http.c:884              <= Recv header, 
+0000000053 bytes (0x00000035)
+15:41:25.756343 http.c:896              <= Recv header: 
+cache-control: no-cache, max-age=0, must-revalidate
+15:41:25.756343 http.c:884              <= Recv header, 
+0000000023 bytes (0x00000017)
+15:41:25.756343 http.c:896              <= Recv header: 
+vary: Accept-Encoding
+15:41:25.756343 http.c:884              <= Recv header, 
+0000000037 bytes (0x00000025)
+15:41:25.756343 http.c:896              <= Recv header: 
+date: Sun, 04 Jan 2026 10:11:27 GMT
+15:41:25.756343 http.c:884              <= Recv header, 
+0000000023 bytes (0x00000017)
+15:41:25.756343 http.c:896              <= Recv header: 
+x-frame-options: DENY
+15:41:25.756343 http.c:884              <= Recv header, 
+0000000073 bytes (0x00000049)
+15:41:25.756343 http.c:896              <= Recv header: 
+strict-transport-security: max-age=31536000; 
+includeSubDomains; preload
+15:41:25.756343 http.c:884              <= Recv header, 
+0000000059 bytes (0x0000003b)
+15:41:25.756343 http.c:896              <= Recv header: 
+x-github-request-id: 1201:23247A:173BD15:1B33133:695A3CCD
+15:41:25.756343 http.c:884              <= Recv header, 
+0000000002 bytes (0x00000002)
+15:41:25.756343 http.c:896              <= Recv header:
+15:41:25.756343 http.c:937              == Info: Connection 
+#0 to host github.com left intact
+error: remote-curl: error reading command stream from git
+error: failed to push some refs to 
+'https://github.com/Linuxboii/kshetra.git'
